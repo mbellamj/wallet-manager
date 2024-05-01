@@ -17,7 +17,7 @@ module.exports = {
       "npm run lint",
       //   'npm run test',
     ],
-    "after:bump": "npx auto-changelog -p",
+    "after:bump": "npx auto-changelog -p && git add CHANGELOG.md",
   },
   npm: {
     publish: false,
