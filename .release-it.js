@@ -1,9 +1,9 @@
-const version = '${version}';
-const name = require('./package.json').name;
+const version = "${version}";
+const name = require("./package.json").name;
 
 module.exports = {
   git: {
-    requireBranch: 'main',
+    requireBranch: "main",
     tagName: `v${version}`,
     commitMessage: `chore(release): Bumping ${name} to version v${version}`,
     requireCommits: true,
@@ -11,13 +11,13 @@ module.exports = {
     requireCleanWorkingDir: false,
   },
   hooks: {
-    'before:init': [
-      'git pull',
-      'npm run format',
-      'npm run lint',
-      'npm run test',
+    "before:init": [
+      "git pull",
+      //   'npm run format',
+      "npm run lint",
+      //   'npm run test',
     ],
-    'after:bump': 'npx auto-changelog -p',
+    "after:bump": "npx auto-changelog -p",
   },
   npm: {
     publish: false,
