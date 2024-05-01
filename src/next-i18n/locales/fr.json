@@ -1,0 +1,43 @@
+{
+  "Header": {
+    "userAccount": {
+      "dropdownMenu": {
+        "label": "mon compte",
+        "settings": "paramètres",
+        "help": "aide",
+        "logout": "déconnexion"
+      }
+    }
+  },
+  "WalletSwicher": {
+    "comboboxSelectLabel": "Selectionner un portefeuille",
+    "emptyCommandText": "Aucun portefeuille disponible.",
+    "createWalletLabel": "Nouveau portefeuille",
+    "formNewWalletDescription": "Ajouter un portefeuille et gérer vos tokens.",
+    "formNewWalletName": "Nom du portefeuille",
+    "formNewWalletNamePlaceholder": "Entrer un nom"
+  },
+  "form": {
+    "cancel": "Annuler",
+    "continue": "continuer",
+    "submit": "valider"
+  },
+  "ConnectWallet": {
+    "button": "connecter un portefeuille",
+    "title": "votre portefeuille",
+    "description": "sélectionnez un portefeuille pour vous connecter.",
+    "emptyCommandText": "Aucun portefeuille disponible.",
+    "searchInputPlaceholder": "rechercher un portefeuille"
+  },
+  "web3Provider": {
+    "status": {
+      "install": "installer",
+      "installed": "installé",
+      "connect": "connecter",
+      "connecting": "connexion...",
+      "connected": "connecté",
+      "disconnect": "déconnecter",
+      "disconnected": "déconnecté"
+    }
+  }
+}

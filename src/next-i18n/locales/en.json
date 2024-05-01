@@ -1,0 +1,43 @@
+{
+  "Header": {
+    "userAccount": {
+      "dropdownMenu": {
+        "label": "my account",
+        "settings": "settings",
+        "help": "support",
+        "logout": "logout"
+      }
+    }
+  },
+  "WalletSwicher": {
+    "comboboxSelectLabel": "Select a wallet",
+    "emptyCommandText": "No wallet found.",
+    "createWalletLabel": "Create Wallet",
+    "formNewWalletDescription": "Add a new wallet to manage your tokens.",
+    "formNewWalletName": "Wallet name",
+    "formNewWalletNamePlaceholder": "Enter a name"
+  },
+  "form": {
+    "cancel": "cancel",
+    "continue": "continue",
+    "submit": "submit"
+  },
+  "ConnectWallet": {
+    "button": "Connect a wallet",
+    "title": "your wallet",
+    "description": "Choose a wallet to connect",
+    "emptyCommandText": "No wallet found.",
+    "searchInputPlaceholder": "Search wallet provider"
+  },
+  "web3Provider": {
+    "status": {
+      "install": "install",
+      "installed": "installed",
+      "connecting": "connecting...",
+      "connect": "connect",
+      "connected": "connected",
+      "disconnect": "disconnect",
+      "disconnected": "disconnected"
+    }
+  }
+}
