@@ -18,17 +18,21 @@
     "formNewWalletName": "Wallet name",
     "formNewWalletNamePlaceholder": "Enter a name"
   },
-  "form": {
-    "cancel": "cancel",
-    "continue": "continue",
-    "submit": "submit"
-  },
   "ConnectWallet": {
-    "button": "Connect a wallet",
-    "title": "your wallet",
-    "description": "Choose a wallet to connect",
-    "emptyCommandText": "No wallet found.",
-    "searchInputPlaceholder": "Search wallet provider"
+    "card": {
+      "title": "your wallet"
+    },
+    "dialog": {
+      "trigger": "connect a wallet",
+      "title": "your wallet",
+      "description": "choose a wallet to connect"
+    }
+  },
+  "Connector": {
+    "picker": {
+      "inputPlaceholder": "search wallet provider",
+      "emptyCommandText": "No wallet found."
+    }
   },
   "web3Provider": {
     "status": {
@@ -40,5 +44,10 @@
       "disconnect": "disconnect",
       "disconnected": "disconnected"
     }
+  },
+  "form": {
+    "cancel": "cancel",
+    "continue": "continue",
+    "submit": "submit"
   }
 }

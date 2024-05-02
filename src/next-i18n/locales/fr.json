@@ -18,17 +18,21 @@
     "formNewWalletName": "Nom du portefeuille",
     "formNewWalletNamePlaceholder": "Entrer un nom"
   },
-  "form": {
-    "cancel": "Annuler",
-    "continue": "continuer",
-    "submit": "valider"
-  },
   "ConnectWallet": {
-    "button": "connecter un portefeuille",
-    "title": "votre portefeuille",
-    "description": "sélectionnez un portefeuille pour vous connecter.",
-    "emptyCommandText": "Aucun portefeuille disponible.",
-    "searchInputPlaceholder": "rechercher un portefeuille"
+    "card": {
+      "title": "votre portefeuille"
+    },
+    "dialog": {
+      "trigger": "connecter un portefeuille",
+      "title": "votre portefeuille",
+      "description": "sélectionnez un portefeuille pour vous connecter."
+    }
+  },
+  "Connector": {
+    "picker": {
+      "inputPlaceholder": "rechercher un portefeuille",
+      "emptyCommandText": "Aucun portefeuille disponible."
+    }
   },
   "web3Provider": {
     "status": {
@@ -40,5 +44,10 @@
       "disconnect": "déconnecter",
       "disconnected": "déconnecté"
     }
+  },
+  "form": {
+    "cancel": "Annuler",
+    "continue": "continuer",
+    "submit": "valider"
   }
 }
