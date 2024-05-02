@@ -1,13 +1,14 @@
 {
-  "Header": {
-    "userAccount": {
-      "dropdownMenu": {
-        "label": "mon compte",
-        "settings": "paramètres",
-        "help": "aide",
-        "logout": "déconnexion"
-      }
-    }
+  "ThemeSwitcher": {
+    "light": "clair",
+    "dark": "sombre",
+    "system": "système"
+  },
+  "UserAccountMenu": {
+    "label": "mon compte",
+    "settings": "paramètres",
+    "help": "aide",
+    "logout": "déconnexion"
   },
   "WalletSwicher": {
     "comboboxSelectLabel": "Selectionner un portefeuille",

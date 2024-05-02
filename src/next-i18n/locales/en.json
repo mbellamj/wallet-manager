@@ -1,13 +1,14 @@
 {
-  "Header": {
-    "userAccount": {
-      "dropdownMenu": {
-        "label": "my account",
-        "settings": "settings",
-        "help": "support",
-        "logout": "logout"
-      }
-    }
+  "ThemeSwitcher": {
+    "light": "light",
+    "dark": "dark",
+    "system": "system"
+  },
+  "UserAccountMenu": {
+    "label": "my account",
+    "settings": "settings",
+    "help": "support",
+    "logout": "logout"
   },
   "WalletSwicher": {
     "comboboxSelectLabel": "Select a wallet",
