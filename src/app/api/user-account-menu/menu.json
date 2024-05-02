@@ -1,0 +1,12 @@
+{
+  "data": [
+    {
+      "title": "settings",
+      "iconName": "settings"
+    },
+    {
+      "title": "help",
+      "iconName": "contact"
+    }
+  ]
+}
