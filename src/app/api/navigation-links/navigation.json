@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "link": "/",
+      "text": "dashboard"
+    },
+    {
+      "link": "/tokens",
+      "text": "Tokens"
+    },
+    {
+      "link": "/analytics",
+      "text": "Analytics"
+    },
+    {
+      "link": "/settings",
+      "text": "Settings"
+    }
+  ]
+}
