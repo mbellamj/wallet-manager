@@ -1,6 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
-import { data } from "./menu.json";
 
 export async function GET(request: NextRequest) {
-  return NextResponse.json(data);
+  try {
+    const data = await import("./menu.json")
+      .then((response) => response.data)
+      .then((data) =>
+        data.map((value) => ({ ...value, title: value.title.toLowerCase() }))
+      );
+    return NextResponse.json(data);
+  } catch (error) {
+    console.log("error =", error);
+  }
 }
