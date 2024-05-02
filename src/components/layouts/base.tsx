@@ -23,6 +23,7 @@ const BaseLayout: FC<PropsWithChildren> = async ({ children }) => {
                 "bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6"
               )}
             />
+
             {children}
           </div>
         </div>
