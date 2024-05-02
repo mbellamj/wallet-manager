@@ -2,7 +2,7 @@ import { Web3Provider } from "@/core/interfaces/web3.interface";
 import { Web3ReactHooks } from "@web3-react/core";
 import Image from "next/image";
 import { FC } from "react";
-import { Status } from "./status";
+import { ConnectorStatus } from "./status";
 
 interface ConnectorProviderProps {
   provider: Web3Provider;
@@ -31,11 +31,11 @@ export const ConnectorProvider: FC<ConnectorProviderProps> = ({
           {provider.name}
         </p>
       </div>
-      <Status
+      <ConnectorStatus
+        isInstalled={provider.installed}
         isActivating={isActivating}
         isActive={isActive}
         error={error}
-        isInstalled={provider.installed}
       />
     </>
   );

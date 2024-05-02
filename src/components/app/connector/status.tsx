@@ -6,14 +6,14 @@ import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import { FC, useMemo } from "react";
 
-interface StatusProps {
+interface ConnectorStatusProps {
   isActivating: boolean;
   isActive: boolean;
   isInstalled?: boolean;
   error?: Error;
 }
 
-export const Status: FC<StatusProps> = ({
+export const ConnectorStatus: FC<ConnectorStatusProps> = ({
   isActivating,
   isActive,
   isInstalled,
