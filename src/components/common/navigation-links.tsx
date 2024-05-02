@@ -2,6 +2,7 @@
 
 import { NavItem } from "@/core/interfaces/navigation.interface";
 import { fetcher, getIcon } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 import { FC } from "react";
 import useSWR from "swr";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
@@ -27,29 +28,48 @@ export const NavigationLinks: FC<NavigationLinkProps> = ({
   inactiveLinkClassName,
 }) => {
   const { data, error } = useSWR<NavItem[]>("/api/navigation-links", fetcher);
+  const t = useTranslations("NavigationLinks");
 
   if (error || !data) return null;
 
   return (
-    <nav className={className}>
-      <Logo className={logoLinkClassName} iconClassName={logoClassName} />
-      {data.map(({ link, text, target }, idx) => (
-        <Tooltip key={`${text}-${idx}`}>
+    <>
+      <nav className={className}>
+        <Logo className={logoLinkClassName} iconClassName={logoClassName} />
+        {data.map(({ link, text, target }, idx) => (
+          <Tooltip key={`${text}-${idx}`}>
+            <TooltipTrigger asChild>
+              <NavigationLink
+                href={link}
+                target={target}
+                className={linkClassName}
+                activeClassName={activeLinkClassName}
+                inactiveClassName={inactiveLinkClassName}
+              >
+                <Icon className="h-5 w-5" name={getIcon(text)} />
+                <span className="sm:sr-only capitalize">{t(text)}</span>
+              </NavigationLink>
+            </TooltipTrigger>
+            <TooltipContent side="right">{t(text)}</TooltipContent>
+          </Tooltip>
+        ))}
+      </nav>
+      <nav className="mt-auto flex flex-col items-center gap-4 px-2 sm:py-5">
+        <Tooltip>
           <TooltipTrigger asChild>
             <NavigationLink
-              href={link}
-              target={target}
+              href="/settings"
               className={linkClassName}
               activeClassName={activeLinkClassName}
               inactiveClassName={inactiveLinkClassName}
             >
-              <Icon className="h-5 w-5" name={getIcon(text)} />
-              <span className="sm:sr-only capitalize">{text}</span>
+              <Icon className="h-5 w-5" name="settings" />
+              <span className="sm:sr-only capitalize">{t("settings")}</span>
             </NavigationLink>
           </TooltipTrigger>
-          <TooltipContent side="right">{text}</TooltipContent>
+          <TooltipContent side="right">{t("settings")}</TooltipContent>
         </Tooltip>
-      ))}
-    </nav>
+      </nav>
+    </>
   );
 };
