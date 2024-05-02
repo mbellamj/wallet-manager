@@ -6,10 +6,10 @@ import type { FC, PropsWithChildren } from "react";
 
 export const ThemeProvider: FC<PropsWithChildren> = ({ children }) => (
   <NextThemeProvider
-    attribute="data-theme"
+    attribute="class"
     defaultTheme="system"
     storageKey={THEME_STORAGE_KEY}
-    enableSystem={true}
+    enableSystem
   >
     {children}
   </NextThemeProvider>
