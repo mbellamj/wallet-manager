@@ -6,15 +6,11 @@
     },
     {
       "link": "/tokens",
-      "text": "Tokens"
+      "text": "tokens"
     },
     {
       "link": "/analytics",
-      "text": "Analytics"
-    },
-    {
-      "link": "/settings",
-      "text": "Settings"
+      "text": "analytics"
     }
   ]
 }

@@ -10,6 +10,12 @@
     "help": "support",
     "logout": "logout"
   },
+  "NavigationLinks": {
+    "dashboard": "dashboard",
+    "settings": "settings",
+    "analytics": "analytics",
+    "tokens": "tokens"
+  },
   "WalletSwicher": {
     "comboboxSelectLabel": "Select a wallet",
     "emptyCommandText": "No wallet found.",

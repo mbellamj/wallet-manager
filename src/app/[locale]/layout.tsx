@@ -4,15 +4,12 @@ import { availableLocalesMap, defaultLocale } from "@/next-i18n/next.locales";
 import { LocaleProvider } from "@/providers/locale";
 import { ThemeProvider } from "@/providers/theme";
 import { Web3ContextProvider } from "@/providers/web3";
+import { LayoutProps } from "@/types";
 import type { Metadata } from "next";
 import { getLocale } from "next-intl/server";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
-
-interface RootLayoutProps {
-  children: React.ReactNode;
-}
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,7 +18,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-}: Readonly<RootLayoutProps>) {
+}: Readonly<LayoutProps>) {
   const locale = await getLocale();
 
   const { hrefLang, langDir } = availableLocalesMap[locale] || defaultLocale;
